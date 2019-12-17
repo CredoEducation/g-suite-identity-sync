@@ -20,7 +20,7 @@
     </properties>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com:hlavki/g-suite-identity-sync.git</connection>
+        <connection>scm:git:ssh://git@github.com:Yaneia/g-suite-identity-sync.git</connection>
         <tag>HEAD</tag>
     </scm>
 
