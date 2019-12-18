@@ -20,7 +20,7 @@ VeeValidate.Validator.extend('password', {
   getMessage: field => 'Invalid password! Password length must be 8-16 with at least one digit', // eslint-disable-line no-unused-vars
   validate: value => {
     var strongRegex = new RegExp('^[a-zA-Z0-9_]\w{7,15}$')
-    return strongRegex.test(value)
+    return true
   }
 })
 
