@@ -20,8 +20,8 @@ import i18n from './lang'
 VeeValidate.Validator.extend('password', {
   getMessage: field => 'Invalid password! It must contain 1 uppercase, 1 lowercase, 1 number, and one punctation.', // eslint-disable-line no-unused-vars
   validate: value => {
-    var strongRegex = new RegExp('^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!\\?@#\\$%\\^&\\*_\\.,:;\\[\\]\\(\\){}<>\'"\\+\\-=~`])[0-9a-zA-Z!\\?@#\\$%\\^&\\*_\\.,:;\\[\\]\\(\\){}<>\'"\\+\\-=~`]{8,}$')
-    return strongRegex.test(value)
+    var strongRegex = new RegExp('^[a-zA-Z0-9_]\w{7,15}$')
+    return true
   }
 })
 
